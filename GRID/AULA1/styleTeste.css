@@ -34,12 +34,21 @@ body{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 45px;
+    gap: 30px;
     font-size: 15px;
     margin-top: 30px;
     padding-inline: 50px;
     color: white;
+}
+.links li{
+    background-color: rgb(37, 70, 52);
+    padding: 5px 15px 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.links li:hover{
     background-color: rgb(48, 109, 76);
+    transition: 1s ease;
 }
 .sidenav{
     grid-area: sidenav;
@@ -48,8 +57,11 @@ body{
     list-style: none;
 }
 .sidenav ul img{
-    max-width: 90px;
-    padding: 15px;
+    max-width: 80px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 3px rgb(175, 173, 173);
 }
 .anuncio{
     grid-area: anuncio;
@@ -57,4 +69,42 @@ body{
 .anuncio div img{
     max-width: 205px;
     margin-top: 35px;
+    margin-left: 25px;
+}
+h1{
+    font-size: 35px;
+    color: rgb(48, 109, 76);
+}
+p{
+    font-size: 20px;
+}
+.html1{
+    max-width: 450px;
+    padding-inline: 10px;
+}
+.html2{
+    max-width: 400px;
+}
+.conteudo{
+    display: grid;
+    margin: 15px;
+}
+.foto1{
+    grid-column: 1;
+}
+.pt1{
+    grid-column: span 2;
+    margin: 5px;
+    text-align: justify;
+}
+.pt2{
+     grid-column: 1;
+     text-align: justify;
+     padding-inline: 10px;
+}
+.pt3{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: justify;
+    padding-inline: 10px;
 }
